@@ -1,0 +1,12 @@
+server :
+  port : 8081
+spring:
+  datasource:
+    username: "ilan_fc_men"
+    password : "T#S3*aPf*M9upec"
+    url : "jdbc:mariadb://mysql-ilan.alwaysdata.net/ilan_menuiserie"
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database: mysql
