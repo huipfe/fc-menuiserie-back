@@ -1,0 +1,1 @@
+INSERT INTO menuiserie(nom) VALUE ('Menuiserie de Ilan')

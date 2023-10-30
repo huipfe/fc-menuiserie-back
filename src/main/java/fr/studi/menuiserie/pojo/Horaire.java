@@ -1,7 +1,7 @@
 package fr.studi.menuiserie.pojo;
 
 
-import fr.studi.menuiserie.Jour;
+import fr.studi.menuiserie.pojo.enumerate.Jour;
 import lombok.Getter;
 import lombok.Setter;
 

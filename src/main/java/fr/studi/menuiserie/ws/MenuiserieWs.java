@@ -3,13 +3,11 @@ package fr.studi.menuiserie.ws;
 import fr.studi.menuiserie.pojo.Menuiserie;
 import fr.studi.menuiserie.service.MenuiserieService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-@RestController
+@RestController //C'est un bean/haricot
 @RequestMapping("/api")
+@CrossOrigin
 public class MenuiserieWs {
 
     @Autowired
@@ -18,6 +16,10 @@ public class MenuiserieWs {
     @PostMapping
     public void createMenuiserie(@RequestBody Menuiserie menuiserie){
         this.menuiserieService.createMenuiserie(menuiserie);
+    }
 
+   @GetMapping
+    public Menuiserie getMenuiserie(){
+        return this.menuiserieService.getMenuiserie();
   }
 }
