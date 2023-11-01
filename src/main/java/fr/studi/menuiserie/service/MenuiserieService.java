@@ -5,6 +5,8 @@ import fr.studi.menuiserie.pojo.Menuiserie;
 import fr.studi.menuiserie.repository.MenuiserieRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
@@ -27,5 +29,10 @@ public class MenuiserieService {
             maMenuiserie = menuiseriesList.get(0); //Alors je récup ma menuiserie, je l'affecte ma variable
         }
         return maMenuiserie; //Et je la retourne
+    }
+
+
+    public void updateMenuiserie(Menuiserie menuiserie){
+       Menuiserie maMenuiserie = this.getMenuiserie();
     }
 }

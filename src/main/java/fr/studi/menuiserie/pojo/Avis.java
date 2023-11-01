@@ -13,7 +13,7 @@ public class Avis {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "avis_id")
     private Long avis_id;
 
     private String pseudo;
